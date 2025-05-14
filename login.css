@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f8fc;
+}
+
+/* Form Container */
+.form-container {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+/* Forms Wrapper */
+.forms {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 200%;
+}
+
+.forms.active {
+    transform: translateX(-50%);
+}
+
+/* Individual Forms */
+.form {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Form Headings */
+.form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #45a049;
+}
+
+/* Toggle Links */
+.toggle-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.toggle-link span {
+    color: #4CAF50;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle-link span:hover {
+    text-decoration: underline;
+}
+
+/* Google Sign-In */
+.g_id_signin {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.g_id_signin > div {
+    display: inline-block;
+    width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .forms {
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    .forms.active {
+        transform: translateY(-100%);
+    }
+    
+    
+}
+
+.bt {
+    text-align: center;
+    margin: 20px 0;
+    
+ }
+ 
+ .bt .button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #0078D7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+ }
+ 
+ .bt .button:hover {
+    background-color: #db0b9d;
+ }

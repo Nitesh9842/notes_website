@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="bt">
+        <a href="index.html"><input class="button" type="button" value="Go To Home"></a><br><br><br>
+    </div><br><br>
+
+    <div class="form-container">
+        <div class="forms">
+            <!-- Login Form -->
+            <div class="form login-form" id="login-form">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" class="input-field">
+                <input type="password" placeholder="Password" class="input-field">
+                <button class="button">Login</button>
+                <p class="toggle-link">Don't have an account? <span id="show-signup">Sign Up</span></p>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="form signup-form" id="signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username" class="input-field">
+                <input type="email" placeholder="Email" class="input-field">
+                <input type="password" placeholder="Password" class="input-field">
+                <input type="password" placeholder="Confirm Password" class="input-field">
+                <button class="button">Sign Up</button>
+                <p class="toggle-link">Already have an account? <span id="show-login">Login</span></p>
+
+                <!-- Sign Up with Google -->
+                <div id="g_id_onload"
+                    data-client_id="YOUR_CLIENT_ID"
+                    data-context="signup"
+                    data-ux_mode="popup"
+                    data-callback="handleCredentialResponse"
+                    data-auto_prompt="false">
+                </div>
+                <div class="g_id_signin" data-type="standard"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
